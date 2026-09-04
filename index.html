@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Teresa Alvarez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F4EFE6; --eucalyptus:#1F2D24; --carbon:#1A1A1A; --copper:#A87C5C;
+    --line:rgba(26,26,26,0.14);
+    --display:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{
+    margin:0; background:var(--cream); color:var(--carbon);
+    font-family:var(--display); font-variation-settings:"opsz" 30;
+    -webkit-font-smoothing:antialiased;
+    min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    padding:32px 20px;
+  }
+  .sans{ font-family:var(--sans); }
+
+  .card{
+    width:100%; max-width:380px;
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+  }
+  .seal{
+    font-family:var(--display); font-variation-settings:"opsz" 144;
+    font-weight:480; letter-spacing:-0.02em; color:var(--eucalyptus);
+    font-size:52px; line-height:1; margin-bottom:20px;
+  }
+
+  h1{
+    margin:0; font-size:2rem; font-weight:500; font-variation-settings:"opsz" 144;
+    letter-spacing:-0.01em; color:var(--eucalyptus); text-wrap:balance;
+  }
+  .role{
+    margin-top:.6rem; font-family:var(--sans); font-size:.7rem; letter-spacing:.24em;
+    text-transform:uppercase; color:var(--copper); font-weight:500;
+  }
+  .tagline{
+    margin-top:1.2rem; font-style:italic; font-size:1.05rem; line-height:1.55; color:var(--carbon);
+    max-width:28ch;
+  }
+
+  .actions{ width:100%; margin-top:2rem; display:flex; flex-direction:column; gap:.7rem; }
+  .btn{
+    display:flex; align-items:center; justify-content:center; gap:.5rem;
+    width:100%; padding:.95rem 1.2rem; border-radius:2px;
+    font-family:var(--sans); font-weight:500; font-size:.78rem;
+    text-transform:uppercase; letter-spacing:.2em;
+    text-decoration:none; border:1px solid transparent; cursor:pointer;
+  }
+  .btn svg{ width:16px; height:16px; flex-shrink:0; }
+  .btn-primary{ background:var(--eucalyptus); color:var(--cream); }
+  .btn-secondary{ background:transparent; color:var(--eucalyptus); border-color:var(--line); }
+
+  .phone{
+    margin-top:1.4rem; font-family:var(--sans); font-size:.85rem; color:var(--copper); text-decoration:none;
+    border-bottom:1px solid rgba(168,124,92,0.35); padding-bottom:2px; letter-spacing:.03em;
+  }
+
+  .note{
+    margin-top:1.6rem; font-family:var(--sans); font-size:.68rem; color:var(--carbon); opacity:.6;
+    max-width:30ch; line-height:1.6;
+  }
+
+  footer{
+    margin-top:2.6rem; padding-top:1.8rem; border-top:1px solid var(--line);
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+  }
+  footer .wordmark{
+    font-family:var(--display); font-variation-settings:"opsz" 144;
+    display:inline-flex; flex-direction:column; align-items:center; line-height:0.9; color:var(--eucalyptus);
+  }
+  footer .wordmark .mt{ font-size:1.9rem; font-weight:480; letter-spacing:-0.025em; }
+  footer .wordmark .aest{ font-size:.68rem; font-weight:380; letter-spacing:.24em; margin-top:6px; }
+  footer .loc{ margin-top:8px; font-family:var(--sans); font-size:.62rem; letter-spacing:.24em; color:var(--copper); text-transform:uppercase; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="seal">MT</div>
+    <h1>Maria Teresa Alvarez</h1>
+    <div class="role">Fundadora &middot; MT Aesthetics</div>
+    <p class="tagline">Veinte a&ntilde;os de oficio. Cuidado de piel en cuarto privado.</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3AAlvarez%3BMaria%20Teresa%3B%3B%3B%0AFN%3AMaria%20Teresa%20Alvarez%0AORG%3AMT%20Aesthetics%0ATITLE%3AFounder%0ATEL%3BTYPE%3DCELL%3A%2B13474795229%0AURL%3Ahttps%3A%2F%2Fmtaesthetics.org%0AEND%3AVCARD">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+        Guardar contacto
+      </a>
+      <a class="btn btn-secondary" href="https://mtaesthetics.org" target="_blank" rel="noopener">
+        Ver MT Aesthetics
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <a class="phone" href="tel:+13474795229">+1 (347) 479-5229</a>
+
+    <p class="note">El bot&oacute;n de guardar contacto depende del tel&eacute;fono y navegador. La forma garantizada es escanear el QR de la tarjeta f&iacute;sica con la c&aacute;mara.</p>
+
+    <footer>
+      <div class="wordmark"><span class="mt">MT</span><span class="aest">AESTHETICS</span></div>
+      <div class="loc">The Parlour &middot; New York</div>
+    </footer>
+  </div>
+</body>
+</html>
